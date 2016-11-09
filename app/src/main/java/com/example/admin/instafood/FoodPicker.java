@@ -1,7 +1,9 @@
 package com.example.admin.instafood;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 public class FoodPicker extends AppCompatActivity {
 
@@ -10,4 +12,10 @@ public class FoodPicker extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_food_picker);
     }
+
+    public void onClickConfirmAndReserve(View view) {
+        Intent i = new Intent(this, ConfirmationActivity.class);
+        startActivity(i);
+    }
+
 }
