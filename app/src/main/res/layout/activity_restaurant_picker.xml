@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.example.admin.instafood.RestaurantPicker">
-
+    tools:context="com.example.admin.instafood.RestaurantPicker"
+    android:background="@android:color/black">
 
     <LinearLayout
         android:orientation="vertical"
@@ -18,10 +18,10 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="100dp"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:background="#3a3a3a"
+            android:background="@android:color/black"
             android:paddingLeft="100dp"
             android:paddingTop="15dp">
 
@@ -42,11 +42,25 @@
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true" />
 
+            <TextView
+                android:text="Restaurants"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="47dp"
+                android:layout_marginStart="47dp"
+                android:layout_alignLeft="@+id/imageView2"
+                android:layout_alignStart="@+id/imageView2"
+                android:layout_alignParentBottom="true" />
+
+
         </RelativeLayout>
 
         <ListView
             android:layout_width="match_parent"
-            android:layout_height="521dp"
+            android:layout_height="500dp"
             android:id="@+id/restaurantsListView"
             android:layout_gravity="center_horizontal" />
 
@@ -55,7 +69,8 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:id="@+id/find_restaurant_btn"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:onClick="onClickFindRestaurant"/>
 
     </LinearLayout>
 

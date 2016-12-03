@@ -7,7 +7,6 @@
     android:fitsSystemWindows="true"
     tools:context="com.example.admin.instafood.FoodPicker">
 
-
     <RelativeLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -18,37 +17,6 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="56dp"
         android:weightSum="1">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:background="#3a3a3a"
-            android:paddingLeft="100dp"
-            android:paddingTop="15dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:id="@+id/relativeLayout">
-
-            <ImageView
-                android:layout_width="200dp"
-                android:layout_height="50dp"
-                android:id="@+id/imageView2"
-                android:background="@drawable/instafood_logo"
-                android:adjustViewBounds="true"
-                android:scaleType="centerCrop"
-                android:layout_alignParentTop="true"
-                android:layout_marginRight="120dp"
-                android:layout_marginEnd="120dp"
-                android:layout_marginLeft="11dp"
-                android:layout_marginStart="11dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
-
-        </RelativeLayout>
-
 
         <Button
             android:text="Confirm Menu and Reserve"
@@ -64,13 +32,57 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/menu2"
+            app:srcCompat="@drawable/menubg"
             android:id="@+id/imageView9"
-            android:layout_below="@+id/relativeLayout"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:scaleType="fitXY"
-            android:layout_above="@+id/button" />
+            android:layout_above="@+id/button"
+            android:layout_marginTop="43dp"
+            android:layout_alignParentTop="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@android:color/black"
+        android:paddingLeft="100dp"
+        android:paddingTop="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageView2"
+            android:background="@drawable/instafood_logo"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="120dp"
+            android:layout_marginEnd="120dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="Menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="57dp"
+            android:layout_marginStart="70dp"
+            android:layout_alignLeft="@+id/imageView2"
+            android:layout_alignStart="@+id/imageView2"
+            android:layout_alignParentBottom="true" />
+
 
     </RelativeLayout>
 

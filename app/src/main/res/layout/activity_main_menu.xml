@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/black">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView2"
+        android:background="@drawable/instafood_logo"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="11dp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/restaurantbg"
+            android:layout_weight="1.0"
+            android:text="My Events (2)"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_margin="10px"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:onClick="onClickMyEvents"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/friendsbg"
+            android:layout_weight="1.0"
+            android:text="My Friends (5)"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_margin="10px"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:onClick="onClickMyFriends"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/myrestaurantsbg"
+            android:layout_weight="1.0"
+            android:text="My Restaurants (4)"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_margin="10px"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:onClick="onClickMyRestaurants"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#444"
+            android:layout_weight="1.0"
+            android:text="Create New Event"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_margin="10px"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:onClick="onClickCreateNewEvent"
+            android:elevation="0dp"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</LinearLayout>

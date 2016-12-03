@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:fitsSystemWindows="true"
+    android:background="#000"
     tools:context="com.example.admin.instafood.TimePicker">
 
 
@@ -12,42 +13,13 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="56dp"
-        android:weightSum="1">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:background="#3a3a3a"
-            android:paddingLeft="100dp"
-            android:paddingTop="15dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:id="@+id/relativeLayout">
-
-            <ImageView
-                android:layout_width="200dp"
-                android:layout_height="50dp"
-                android:id="@+id/imageView2"
-                android:background="@drawable/instafood_logo"
-                android:adjustViewBounds="true"
-                android:scaleType="centerCrop"
-                android:layout_alignParentTop="true"
-                android:layout_marginRight="120dp"
-                android:layout_marginEnd="120dp"
-                android:layout_marginLeft="11dp"
-                android:layout_marginStart="11dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
-
-        </RelativeLayout>
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="78dp">
 
         <TextView
             android:text="Select a Time"
@@ -81,5 +53,35 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:onClick="onClickConfirmTime"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@android:color/black"
+        android:paddingLeft="100dp"
+        android:paddingTop="15dp"
+        android:id="@+id/relativeLayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageView2"
+            android:background="@drawable/instafood_logo"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="120dp"
+            android:layout_marginEnd="120dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
 
 </RelativeLayout>

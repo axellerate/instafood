@@ -16,7 +16,7 @@ public class SplashPage extends AppCompatActivity {
 
 
     public void onClickGetStarted(View view) {
-        Intent i = new Intent(this, RestaurantPicker.class);
+        Intent i = new Intent(this, MainMenu.class);
         startActivity(i);
     }
 

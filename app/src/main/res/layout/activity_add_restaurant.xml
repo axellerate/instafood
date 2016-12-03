@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/black"
+    android:weightSum="1"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView2"
+        android:background="@drawable/instafood_logo"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="11dp"
+
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:background="#fff"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:hint="Enter friends email..."
+        android:textColor="@android:color/darker_gray"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="521dp"
+        android:id="@+id/restaurantsListView"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
