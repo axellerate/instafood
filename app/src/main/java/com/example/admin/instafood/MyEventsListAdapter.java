@@ -35,7 +35,7 @@ public class MyEventsListAdapter extends ArrayAdapter<String> {
 
         txtTitle.setText(itemname[position]);
         imageView.setImageResource(imgid[position]);
-        extratxt.setText("Address: "+(position+1) +"23 Fake Street \nDate: "+(position+2)+"/12/2016 @ "+(position+5)+":00pm");
+        extratxt.setText("Address: "+(position+1) +"23 Fake Street \nDate: "+(position+2)+"/12/2016 @ "+(position+5)+":00pm \nParty Size: "+((position+2)*2));
         return rowView;
 
     };
