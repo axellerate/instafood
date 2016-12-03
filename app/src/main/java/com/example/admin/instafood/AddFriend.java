@@ -26,7 +26,7 @@ public class AddFriend extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_friend);
-        FriendsListAdapter adapter = new FriendsListAdapter(this, friends, imgIds);
+        AddFriendListAdapter adapter = new AddFriendListAdapter(this, friends, imgIds);
         list=(ListView)findViewById(R.id.friendsListView);
         list.setAdapter(adapter);
 

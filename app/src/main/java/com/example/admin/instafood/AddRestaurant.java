@@ -28,7 +28,7 @@ public class AddRestaurant extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_restaurant);
-        RestaurantListAdapter adapter = new RestaurantListAdapter(this, restaurantNames, imgIds);
+        AddRestaurantListAdapter adapter = new AddRestaurantListAdapter(this, restaurantNames, imgIds);
         list=(ListView)findViewById(R.id.restaurantsListView);
         list.setAdapter(adapter);
 
