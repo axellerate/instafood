@@ -17,6 +17,8 @@ public class FriendsListAdapter extends ArrayAdapter<String> {
     private final String[] itemname;
     private final Integer[] imgid;
 
+    Boolean toggle = true;
+
     public FriendsListAdapter(Activity context, String[] itemname, Integer[] imgid) {
         super(context, R.layout.restaurant_list, itemname);
 
@@ -35,7 +37,13 @@ public class FriendsListAdapter extends ArrayAdapter<String> {
 
         txtTitle.setText(itemname[position]);
         imageView.setImageResource(imgid[position]);
-        extratxt.setText((position+1) +"23 Fake Street");
+        if(toggle){
+            extratxt.setText("Friend");
+            toggle = false;
+        } else {
+            extratxt.setText("Colleague");
+            toggle = true;
+        }
         return rowView;
 
     };

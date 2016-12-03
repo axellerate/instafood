@@ -13,16 +13,12 @@ public class AddFriend extends AppCompatActivity {
     String[] friends ={
             "Bill Grates",
             "Gabe Oldwell",
-            "Richard FineMan",
-            "Linux Torvolts",
             "Steve Bobs"
     };
 
     Integer[] imgIds={
             R.drawable.bill_gates,
             R.drawable.gaben,
-            R.drawable.feynman,
-            R.drawable.torvalds,
             R.drawable.jobs
     };
 
@@ -30,7 +26,7 @@ public class AddFriend extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_friend);
-        RestaurantListAdapter adapter = new RestaurantListAdapter(this, friends, imgIds);
+        FriendsListAdapter adapter = new FriendsListAdapter(this, friends, imgIds);
         list=(ListView)findViewById(R.id.friendsListView);
         list.setAdapter(adapter);
 

@@ -61,7 +61,7 @@
 
         <ListView
             android:layout_width="match_parent"
-            android:layout_height="500dp"
+            android:layout_height="490dp"
             android:id="@+id/friendsListView"
             android:layout_gravity="center_horizontal" />
         <Button

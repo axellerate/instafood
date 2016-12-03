@@ -42,7 +42,7 @@ public class FriendsPicker extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_friends_picker);
 
-        RestaurantListAdapter adapter = new RestaurantListAdapter(this, friends, imgIds);
+        FriendsListAdapter adapter = new FriendsListAdapter(this, friends, imgIds);
         list=(ListView)findViewById(R.id.friendsListView);
         list.setAdapter(adapter);
 

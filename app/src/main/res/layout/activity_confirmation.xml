@@ -37,7 +37,7 @@
     </RelativeLayout>
 
     <TextView
-        android:text="Your reservation is confirmed!"
+        android:text="Your reservation is complete!"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="122dp"
