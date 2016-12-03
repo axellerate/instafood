@@ -18,6 +18,6 @@ public class ConfirmationActivity extends AppCompatActivity {
                 Intent i = new Intent(ConfirmationActivity.this, MainMenu.class);
                 startActivity(i);
             }
-        }, 3000);
+        }, 4500);
     }
 }
