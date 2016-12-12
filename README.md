@@ -3,7 +3,7 @@
 
 Instafood is an Android Application that allows users to make reservations and order food from restaurants.
 
-Getting Started:
+#Getting Started:
 
 1. Click on the 'InstafoodApplicationFlows' pdf above to see screenshots of how the application flows from activity to activity.
 
@@ -13,4 +13,7 @@ Getting Started:
 
 4. Navigate through the application.
 
-Can't run the application? No problem! Refer to step 1 from 'Getting Started'.
+
+#Can't run the application? 
+
+No problem! Refer to step 1 from 'Getting Started'.
